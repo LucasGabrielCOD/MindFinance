@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #152238;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.logo {
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+.card {
+  width: 300px;
+  background-color: #1e3159;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #283d70;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form-group input[type="submit"] {
+  background-color: #1877f2;
+  cursor: pointer;
+}
+
+.form-group input[type="submit"].register {
+  background-color: #fff;
+  color: #1e3159;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #1560c8;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.form-options label {
+  font-size: 14px;
+  color: #fff;
+}
+
+.form-options a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.password-toggle {
+  position: relative;
+}
+
+.password-toggle .toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: lightgray;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.password-toggle .toggle-icon:hover {
+  opacity: 1;
+}
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group input#password:focus,
+.form-group input#password.focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.form-group input#password:focus {
+  background-color: #283d70 !important;
+  color: #fff !important;
+}
